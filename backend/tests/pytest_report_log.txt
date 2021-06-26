@@ -1,0 +1,38 @@
+/usr/lib/python3/dist-packages/twisted/internet/address.py:101: DeprecationWarning: The usage of `cmp` is deprecated and will be removed on or after 2021-06-01.  Please use `eq` and `order` instead.
+  @attr.s(hash=False, repr=False, cmp=False)
+=============================================================================================== test session starts ===============================================================================================
+platform linux -- Python 3.8.5, pytest-6.2.4, py-1.10.0, pluggy-0.13.1 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /mnt/d/Dev_env_lenlap/limehome/limehome_hms/backend
+plugins: asyncio-0.15.1, trio-0.7.0, anyio-3.2.1, tornasync-0.6.0.post2, twisted-1.13.2
+collected 6 items
+
+tests/api/test_server.py::test_server_demo_route PASSED                                                                                                                                                     [ 16%]
+tests/api/routes/test_route_hotel.py::test_route_hotel_get_hotels_from_api PASSED                                                                                                                           [ 33%]
+tests/api/routes/test_route_hotel.py::test_status_for_no_hotels_found_get_hotels_from_api PASSED                                                                                                            [ 50%]
+tests/api/routes/test_route_hotel.py::test_status_for_hotels_found_get_hotels_from_api PASSED                                                                                                               [ 66%]
+tests/api/routes/test_route_hotel.py::test_get_hotels_from_db PASSED                                                                                                                                        [ 83%]
+tests/api/routes/test_route_hotel.py::test_persist_hotels_to_db PASSED                                                                                                                                      [100%]
+
+================================================================================================ warnings summary =================================================================================================
+../../../../../../home/chitti/.local/lib/python3.8/site-packages/aiofiles/os.py:10
+../../../../../../home/chitti/.local/lib/python3.8/site-packages/aiofiles/os.py:10
+../../../../../../home/chitti/.local/lib/python3.8/site-packages/aiofiles/os.py:10
+../../../../../../home/chitti/.local/lib/python3.8/site-packages/aiofiles/os.py:10
+../../../../../../home/chitti/.local/lib/python3.8/site-packages/aiofiles/os.py:10
+../../../../../../home/chitti/.local/lib/python3.8/site-packages/aiofiles/os.py:10
+  /home/chitti/.local/lib/python3.8/site-packages/aiofiles/os.py:10: DeprecationWarning: "@coroutine" decorator is deprecated since Python 3.8, use "async def" instead
+    def run(*args, loop=None, executor=None, **kwargs):
+
+../../../../../../home/chitti/.local/lib/python3.8/site-packages/pymongo/srv_resolver.py:72
+../../../../../../home/chitti/.local/lib/python3.8/site-packages/pymongo/srv_resolver.py:72
+  /home/chitti/.local/lib/python3.8/site-packages/pymongo/srv_resolver.py:72: DeprecationWarning: please use dns.resolver.resolve() instead
+    results = resolver.query('_mongodb._tcp.' + self.__fqdn, 'SRV',
+
+../../../../../../home/chitti/.local/lib/python3.8/site-packages/pymongo/srv_resolver.py:57
+../../../../../../home/chitti/.local/lib/python3.8/site-packages/pymongo/srv_resolver.py:57
+  /home/chitti/.local/lib/python3.8/site-packages/pymongo/srv_resolver.py:57: DeprecationWarning: please use dns.resolver.resolve() instead
+    results = resolver.query(self.__fqdn, 'TXT',
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+========================================================================================= 6 passed, 10 warnings in 3.00s ==========================================================================================
