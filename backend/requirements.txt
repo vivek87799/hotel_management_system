@@ -1,0 +1,9 @@
+#app
+fastapi
+uvicorn
+mongoengine
+herepy
+loguru
+
+#dev
+pytest
