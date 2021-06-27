@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.routes import router as api_router
-from app.db.database import db
+from app.db.database import get_db
 
 
 title = "LIMEHOME - Hotel Management system"
@@ -21,4 +21,5 @@ def get_application() -> FastAPI():
     app.include_router(api_router, prefix="/api")
     return app
 
+db = get_db()
 app = get_application()

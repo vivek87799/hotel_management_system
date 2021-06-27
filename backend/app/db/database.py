@@ -16,11 +16,13 @@ class Settings:
 # Establishing connection to the database
 try:
     # db.connect(host="mongodb://127.0.0.1:27017/HMS001")
-    db.connect(db=Settings.database_name, host=Settings.DB_URI)
+    db.connect(db=Settings.database_name, host=Settings.DB_URI, alias = 'default')
     
 except Exception as error:
     # log the exception
     print("logging error", error)
+finally:
+    print("===================db connected======================")
 
 class Position(BaseModel):
     position : conlist(float, min_items=2, max_items=2)
@@ -28,7 +30,7 @@ class Position(BaseModel):
 # from .model_booking import Bookings
 
 
-"""
+
 def get_db():
     
     try:
@@ -37,8 +39,6 @@ def get_db():
         # log the exception
         pass
     return db
-
-"""
 
 
 if __name__ == "__main__":
