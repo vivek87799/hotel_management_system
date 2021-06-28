@@ -51,7 +51,9 @@ Below are the tools that have been used. For a detailed libraries and version pl
 | Validations | pydantic      | 
 | Testing tool | pytest      | 
 | Logging  | python logger      | 
-| container | docker      | 
+| container-dev | docker      | 
+| Hoisting | Heroku      | 
+
 
 #### Run
 ```
