@@ -5,6 +5,8 @@
 
 This is a lightweight Hotel Management System with backend api
 
+ [The application is available here](https://powerful-wildwood-21999.herokuapp.com/docs)
+
 Endpoint features:
 
 -> An endpoint that returns a list of hotels near given coordinates (e.g. 48.130323,11.576362)
