@@ -4,7 +4,6 @@
 
 
 This is a lightweight Hotel Management System with backend api
-https://vivek87799.github.io/hotel_management_system/
  [Detailed infromation of the application can be found here](https://vivek87799.github.io/hotel_management_system/)
 
  [The application hosted on heroku](https://powerful-wildwood-21999.herokuapp.com/docs)
